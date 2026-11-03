@@ -1,0 +1,14 @@
+size=1220 type=3 machine=94 entry=0x210 shnum=10 phnum=3
+pristine               buffer=accept source=accept
+bad-magic              buffer=reject source=reject
+wrong-machine          buffer=reject source=reject
+wrong-class            buffer=reject source=reject
+shoff-past-end         buffer=reject source=reject
+shnum-huge             buffer=reject source=reject
+phoff-past-end         buffer=reject source=reject
+shstrndx-oob           buffer=reject source=reject
+truncated-half         buffer=reject source=reject
+truncated-header       buffer=reject source=reject
+relocate rc=0 entry=set
+relocate-bad rc=error entry=null
+relocate-source rc=0 entry=set

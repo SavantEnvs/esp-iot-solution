@@ -1,0 +1,9 @@
+project: savantenvs/esp-iot-solution
+target: fuzz_elf_load_riscv
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_elf_load_riscv/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_elf_load_riscv
+    libfuzzer: true
+    timeout: 5
