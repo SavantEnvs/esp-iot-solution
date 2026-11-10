@@ -1,0 +1,9 @@
+project: savantenvs/esp-iot-solution
+target: fuzz_rndis_control-mined-d910006
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_rndis_control-mined-d910006/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rndis_control
+    libfuzzer: true
+    timeout: 5
